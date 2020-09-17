@@ -47,7 +47,7 @@
               </div>
             </div>
             <nav class="main-menu">
-              <ul class="main-menu__inner">
+              <ul class="main-menu__list">
                 <li class="main-menu__item"><a class="main-menu__link" title="Главная" href="./index.html">Главная</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" title="Компания" href="#">Компания</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" title="Каталог" href="./catalog.html">Каталог</a></li>
@@ -61,20 +61,30 @@
         </header>
         <main class=" main">
           <div class="content-center">
-            <ul class="bredcrumbs">
-              <li class="bredcrumbs__item"><a class="bredcrumbs__link">Каталог</a><ul>
-                <li class="bredcrumbs__item"><a class="bredcrumbs__link">Инструмент</a><ul>
-                  <li class="bredcrumbs__item"><a class="bredcrumbs__link">Перфораторы</a></li>
-                </ul></li>
-              </ul></li>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link">Каталог</a>
+                <ul>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link">Инструмент</a>
+                    <ul>
+                      <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link">Перфораторы</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <h1 class="catalog-title">Перфораторы</h1>
             <aside class="filter">
               <h2 class="filter__title">фильтр:</h2>
               <div class="price-filter">
                 <h3 class="price-filter__title">Цена:</h3>
-                <input class="price-filter__input" type="range" name="price-value" min="1" max="30000" value="10000" step="1" id="price-range">
-                <p class="price-filter__out"><span class="min-price">0</span> - <span class="max-price">30000</span></p>
+                <div class="price-filter__input-wrapper">
+                  <input class="price-filter__input" type="range" name="price-value" min="1" max="30000" value="10000" step="1" id="price-range">
+                </div>
+                <p class="price-filter__out"><span class="price-filter__out min-price">0</span> - <span class="price-filter__out max-price">30000</span></p>
               </div>
               <div class="brand-filter">
                 <h3 class="brand-filter__title">Производители:</h3>
@@ -100,16 +110,16 @@
             </aside>
             <div class="sort">
               <h3 class="sort__title">сортировка:</h3>
-              <label class="sort__label" for="price-sort">По цене</label>
               <input class="sort__input-radio" type="radio" name="kind-sort" id="price-sort" checked>
-              <label class="sort__label" for="type-sort">По типу</label>
+              <label class="sort__label" for="price-sort">По цене</label>
               <input class="sort__input-radio" type="radio" name="kind-sort" id="type-sort">
-              <label class="sort__label" for="functionality-sort">По функционалу</label>
+              <label class="sort__label" for="type-sort">По типу</label>
               <input class="sort__input-radio" type="radio" name="kind-sort" id="functionality-sort">
-              <label class="sort__label" for="sort-to-min"></label>
+              <label class="sort__label" for="functionality-sort">По функционалу</label>
               <input class="sort__input-radio" type="radio" name="min-max-sort" id="sort-to-min">
-              <label class="sort__label" for="sort-to-max"></label>
+              <label class="sort__label" for="sort-to-min"></label>
               <input class="sort__input-radio" type="radio" name="min-max-sort" id="sort-to-max">
+              <label class="sort__label" for="sort-to-max"></label>
             </div>
             <div class="products">
               <ul class="products__cards">
@@ -209,7 +219,7 @@
                 <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
                 <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
               </ul>
-              <button class="pagiantor-btn" name="next-page">Следующая</button>
+              <button class="pagination-btn" name="next-page">Следующая</button>
             </div>
           </div>  
           <div class="product-description">
@@ -234,10 +244,10 @@
                 <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Каталог">Каталог</a></li>
                 <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Доставка">Доставка</a></li>
                 <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Контакты">Контакты</a></li>
-                <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Материалы">Материалы</a></li>
-                <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Техника">Техника</a></li>
-                <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Инструмент">Инструмент</a></li>
-                <li class="footer-nav__item"><a class="footer-nav__link" href="#" title="Спецпредложения">Спецпредложения</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link footer-nav__link_colored" href="#" title="Материалы">Материалы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link footer-nav__link_colored" href="#" title="Техника">Техника</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link footer-nav__link_colored" href="#" title="Инструмент">Инструмент</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link footer-nav__link_colored" href="#" title="Спецпредложения">Спецпредложения</a></li>
               </ul>
             </div>
           </div>
